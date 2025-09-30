@@ -1,5 +1,5 @@
-- name: "sivakumar reddy m"
-  dob: "01-01-01"
+- name: "Kranthi kumar"
+  dob: "18-07-1999"
   age: 21
   addresses:
     # Object

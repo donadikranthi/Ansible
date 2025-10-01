@@ -6,13 +6,13 @@
   vars_files:
   - course.yaml
   vars_prompt:
-   name: NAME
+  - name: NAME
    prompt: what is your name?
    private: false
   tasks:
   - name: testing variables preference
     vars:
-    NAME: task from level
+      NAME: task from level
     ansible.builtin.debug:
       msg: "Hello, {{ NAME }}. Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
         

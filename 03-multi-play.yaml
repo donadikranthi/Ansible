@@ -1,13 +1,13 @@
 - name: PLAY-01
   hosts: frontend
   tasks:
-  - name: ping from frontend servers
+  - name: PLAY-01 and TASK-01
     ansible.builtin.debug:
       msg: "Hello from PLAY-01 and TASK-01"
 
   - name: PLAY-01 and TASK-02
     ansible.builtin.debug:
-     msg: "Hello from PLAY-01 and TASK-02"
+      msg: "Hello from PLAY-01 and TASK-02"
 
 - name: PLAY-02
   hosts: frontend
@@ -16,9 +16,7 @@
     ansible.builtin.debug:
       msg: "Hello from PLAY-02 and TASK-01"
 
-  - name: PLAY-02 and TASK-02                         
+  - name: PLAY-02 and TASK-02
     ansible.builtin.debug:
       msg: "Hello from PLAY-02 and TASK-02"
- 
-  
     

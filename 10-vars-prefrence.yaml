@@ -10,9 +10,9 @@
    prompt: what is your name?
    private: false
   tasks:
-   - name: testing variables preference
-     vars:
-       NAME: task from level
-       ansible.builtin.debug:
-          msg: "Hello, {{ NAME }}. Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
+  - name: testing variables preference
+    vars:
+    NAME: task from level
+    ansible.builtin.debug:
+      msg: "Hello, {{ NAME }}. Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
         

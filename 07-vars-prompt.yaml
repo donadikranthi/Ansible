@@ -3,9 +3,12 @@
   connection: local # Ansible is connecting to localhost
   vars_prompt:
     - name: username
-      prompt: "Enter your name"
+      prompt: "what's your name?"
       private: false
+  -name: password
+      prompt: "Enter your password"
+      private: true
   tasks:
-  - name: print the user name
+  - name: print credentials
     ansible.builtin.debug:
-      msg: "Hello, username is: {{ username }}"
+      msg: "Hello, username is: {{ username }}, password is: {{ password }}"

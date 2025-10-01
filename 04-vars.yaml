@@ -2,10 +2,13 @@
   hosts: frontend
   connection: local 
   vars:
-    COURSE: Ansible
+    COURSE: DevOps with AWS
     DURATION: 10HRS
     Trainer: Kranthi kumar
   tasks:
-    - name: print the variables
+    - name: print the course info
+      vars:
+        COURSE: Ansible
+        DURATION: 20HRS 
       ansible.builtin.debug:
         msg: "Course name is: {{ COURSE }} and Duration is: {{ DURATION }} and Trainer is: {{ Trainer }}"

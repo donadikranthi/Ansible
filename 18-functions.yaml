@@ -3,6 +3,10 @@
   connection: local
   vars: 
     technologies: Devops, Ansible, Linux, shell  #string
+    name: kranthi
+    gmail: kranthidonadi@gmail.com
+    ipaddress: 34.202.237.89
+
     tags:
       Application: payments
       Environment: production

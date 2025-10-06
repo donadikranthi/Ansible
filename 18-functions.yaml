@@ -6,6 +6,12 @@
     tags:
       Application: payments
       Environment: production
+    
+    listTags:
+      - key: Application
+        value: payments
+      - key: Environment
+        value: production
   tasks:
   - name: default variables
     ansible.builtin.debug:

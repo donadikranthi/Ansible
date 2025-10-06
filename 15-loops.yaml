@@ -3,10 +3,11 @@
   connection: local
   tasks:
   - name: print names
-    ansible.builtin.debug:
+    ansible.builtin.package:
       msg: "Hello, {{ item }}"
     loop:
-      - Cherry 
-      - Manvi 
-      - Mokshi
+      - nginx 
+      - mysql
+      - redis
+      
      

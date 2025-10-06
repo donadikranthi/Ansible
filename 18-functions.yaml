@@ -70,7 +70,7 @@
       msg: "{{ command_output }}"
 
   - name: redirect the output
-    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    ansible.builtin.command: ls -ltr
     register: redirect_output
     ignore_errors: true
 

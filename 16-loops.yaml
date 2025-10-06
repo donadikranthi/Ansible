@@ -1,0 +1,13 @@
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.package:
+     msg: "Hello {{ item }}" # item is reserved
+  
+    loop:
+      - Cherry
+      - Manvi
+      - Mokshi
+      

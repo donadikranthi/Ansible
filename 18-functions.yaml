@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: 
-    technologies: Devops, Ansible, Linux, shell
+    technologies: Devops, Ansible, Linux, shell  #string
   tasks:
   - name: default variables
     ansible.builtin.debug:
@@ -12,4 +12,9 @@
   - name: convert string to list
     ansible.builtin.debug:
       msg: "Technologies are: {{ technologies | split(',') }}"  
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "Tags are: {{ tags | dict2items }}"
+
     

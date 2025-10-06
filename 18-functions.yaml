@@ -4,7 +4,7 @@
   vars: 
     technologies: Devops, Ansible, Linux, shell  #string
     tags:
-      Application: patments
+      Application: payments
       Environment: production
   tasks:
   - name: default variables
@@ -19,5 +19,10 @@
   - name: convert map to list
     ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items }}"
+
+  
+  - name: convert list into map
+    ansible.builtin.debug:
+      msg: "tag map: {{ listTags | items2dict }}"
 
     

@@ -3,6 +3,9 @@
   connection: local
   vars: 
     technologies: Devops, Ansible, Linux, shell  #string
+    tags:
+      Application: patments
+      Environment: production
   tasks:
   - name: default variables
     ansible.builtin.debug:

@@ -11,7 +11,7 @@
       - key: Application
         value: payments
       - key: Environment
-        value: production
+        value: QA
   tasks:
   - name: default variables
     ansible.builtin.debug:

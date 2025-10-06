@@ -3,9 +3,11 @@
   connection: local
   become: yes
   tasks:
-  - name: create user1
-    ansible.builtin.user:
-      name: user1
-      state: present
-    register: user1_creation
-    ignore_errors: true
+  - name: check user exist or not
+    ansible.builtin.command: 
+    register: user_output
+    ignore_errors: yes
+
+    name: print the output
+    ansible.builtin.debug:
+      msg: "{{ user_output }}"

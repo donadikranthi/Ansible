@@ -1,0 +1,17 @@
+- name: facts
+  hosts: local
+  connection: local
+  tasks:
+  - name: install nginx if redhat
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+    when: ansible_facts['os_family'] == "RedHat"
+
+  - name: install nginx if debian
+    ansible.builtin.apt:
+      name: nginx
+      state: latest
+      update_cache: yes
+    when: ansible_facts['os_family'] == "Debian"
+

@@ -22,7 +22,3 @@ module "vpc" {
 
     is_peering_required = true
 }
-
-# data "aws_availability_zones" "available" {
-#   state = "available"
-# }

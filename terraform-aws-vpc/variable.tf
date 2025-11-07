@@ -1,20 +1,76 @@
 variable "vpc_cidr" {
-    description = "CIDR block for the VPC"
-    type        = string
+  type        = string
+  description = "Please provide VPC CIDR"
 }
 
 variable "project_name" {
-    description = "Name of the project"
-    type        = string
+  type = string
 }
 
 variable "environment" {
-    description = "Deployment environment (e.g., dev, prod)"
-    type        = string
+  type = string
 }
 
 variable "vpc_tags" {
-    description = "Tags to apply to the VPC"
-    type        = map
-    default     = {}
+    type = map
+    default = {}
 }
+
+variable "igw_tags" {
+    type = map
+    default = {}
+}
+
+variable "public_subnet_cidrs" {
+    type = list
+}
+
+variable "public_subnet_tags" {
+    type = map
+    default = {}
+}
+
+
+variable "private_subnet_cidrs" {
+    type = list
+}
+
+variable "private_subnet_tags" {
+    type = map
+    default = {}
+}
+
+variable "database_subnet_cidrs" {
+    type = list
+}
+
+variable "database_subnet_tags" {
+    type = map
+    default = {}
+}
+
+variable "public_route_table_tags" {
+    type = map
+    default = {}
+}
+
+variable "private_route_table_tags" {
+    type = map
+    default = {}
+}
+
+variable "database_route_table_tags" {
+    type = map
+    default = {}
+}
+
+variable "eip_tags" {
+    type = map
+    default = {}
+}
+
+variable "nat_gateway_tags" {
+    type = map
+    default = {}
+}
+

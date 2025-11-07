@@ -8,10 +8,11 @@ terraform {
 
   backend "s3" {
     bucket = "remote-state-kranthi"
-    key    = "vpc-module-demo"
+    key    = "remote-state-demo"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
+   
   }
 }
 

@@ -11,7 +11,7 @@
 
 module "sg" {
   count = length(var.sg_names)
-  source = "https://github.com/donadikranthi/roboshop-dev-infra/blob/main/10-sg/main.tf?ref=main"
+  source = "https://github.com/donadikranthi/roboshop-dev-infra/blob/main/10-sg.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_name = var.sg_names[count.index]

@@ -3,13 +3,12 @@ default = "roboshop"
 }
 
 variable "environment"{
-    default ="dev"
+default ="dev"
 }
 
 variable "sg_names" {
     default = [
-        
-        "mongodb","redis","mysql","rabbitmq",
+    "mongodb","redis","mysql","rabbitmq",
         "bastion"
         ]
 }

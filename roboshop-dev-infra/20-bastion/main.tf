@@ -23,6 +23,6 @@ resource "aws_instance" "bastion" {
 
 
 resource "aws_iam_instance_profile" "bastion" {
-    name = "${var.project_name}-${var.environment}-bastion-profile"
-    role = aws_iam_role.bastion.name
-}   
+  name = "bastion"
+  role = "BastionTerraformAdmin"
+} 

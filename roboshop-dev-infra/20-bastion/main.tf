@@ -9,8 +9,6 @@ resource "aws_instance" "bastion" {
         volume_size = 50
         volume_type = "gp3" # or "gp2", depending on your preference
     }
-
-    user_data = file("bastion.sh")
     
     tags = merge (
         local.common_tags,

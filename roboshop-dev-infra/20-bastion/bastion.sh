@@ -13,7 +13,7 @@ sudo yum -y install terraform
 
 # creating databases
 cd /home/ec2-user
-git clone https://github.com/donadikranthi/roboshop-dev-infra.git
+git clone 
 chown ec2-user:ec2-user -R roboshop-dev-infra
 cd roboshop-dev-infra/40-databases
 terraform init

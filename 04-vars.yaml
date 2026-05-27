@@ -1,5 +1,5 @@
 - name: play level variables
-  hosts: frontend
+  hosts: localhost
   connection: local # Ansible is connecting to localhost
   vars:
     COURSE: Ansible

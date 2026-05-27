@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: local
+  hosts: localhost
   connection: local # Ansible is connecting to localhost
   vars_files:
    - course.yaml

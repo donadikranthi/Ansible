@@ -52,13 +52,13 @@
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
 
-  - name: convert lowercase
+  - name: convert uppercase
     ansible.builtin.debug:
       msg: "{{ gmail | upper }}"
 
-  # - name: check IP is valid or not
-  #   ansible.builtin.debug: 
-  #     msg: "{{ ipaddress | ansible.utils.ipv4 }}"
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
   # - name: grep for root
   #   #ansible.builtin.command: cat /etc/passwd | grep root

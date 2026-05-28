@@ -1,16 +1,13 @@
-- name: INSTALL PACKAGES USING LOOP
+- name: loops
   hosts: local
   connection: local
-  become: yes
   tasks:
   - name: print names
-    ansible.builtin.package:
-      name: "{{ item }}"
-      state: latest
+    ansible.builtin.debug:
+     msg: "Hello {{ item }}" # item is reserved
+  
     loop:
-      - nginx 
-      - mysql
-      - zip
+      - Cherry
+      - Manvi
+      - Mokshi
       
-      
-     

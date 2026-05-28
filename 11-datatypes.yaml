@@ -1,6 +1,6 @@
 - name: datatypes
   hosts: frontend
-  connection: frontend
+  connection: local
   vars:
     course: "Devops with AWS"
     duration: 120

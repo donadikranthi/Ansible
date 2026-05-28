@@ -43,10 +43,10 @@
     ansible.builtin.debug:
       msg: "json: {{ student_yaml | to_json  }}"
 
-  # - name: save json to file
-  #   ansible.builtin.copy:
-  #     dest: ./stundent-data.json
-  #     content: "{{ student_yaml | to_nice_json  }}"
+  - name: save json to file
+    ansible.builtin.copy:
+      dest: ./stundent-data.json
+      content: "{{ student_yaml | to_nice_json  }}"
 
   # - name: convert uppercase
   #   ansible.builtin.debug:

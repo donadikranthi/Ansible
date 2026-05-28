@@ -54,7 +54,7 @@
 
   - name: convert lowercase
     ansible.builtin.debug:
-      msg: "{{ gmail | lower }}"
+      msg: "{{ gmail | upper }}"
 
   # - name: check IP is valid or not
   #   ansible.builtin.debug: 

@@ -6,7 +6,7 @@
     name: kranthi
     gmail: kranthidonadi@gmail.com
     ipaddress: 54.91.97.12
-
+    # dictionary == map
     tags:
       Application: payments
       Environment: production
@@ -31,9 +31,9 @@
       msg: "Tags are: {{ tags | dict2items }}"
 
   
-  # - name: convert list into map
-  #   ansible.builtin.debug:
-  #     msg: "tag map: {{ listTags | items2dict }}"
+  - name: convert list into map
+    ansible.builtin.debug:
+      msg: "tag map: {{ listTags | items2dict }}"
 
   # - name: read yaml and take it into variable
   #   ansible.builtin.set_fact:

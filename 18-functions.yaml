@@ -48,9 +48,9 @@
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json  }}"
 
-  # - name: convert uppercase
-  #   ansible.builtin.debug:
-  #     msg: "{{ name | upper }}"
+  - name: convert uppercase
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
 
   # - name: convert lowercase
   #   ansible.builtin.debug:
